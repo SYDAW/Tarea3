@@ -44,7 +44,8 @@ section {
 
 section img:hover {
     transform: scale(1.2);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    padding: 50px;
 }
 
 
@@ -68,19 +69,38 @@ footer {
     align-items: center;
 }
 
-.book img,
-a img {
+.book:hover {
+    background-color: #ecf0f17b;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    padding: 50px;
+}
+
+img {
     max-width: 200px;
     margin-right: 20px;
     max-height: 300px;
 }
 
-.libros_principal {
+.libros_principal, .categ {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.categ a {
-    float: left;
-    margin: 30px;
+
+.categ li:hover {
+    background-color: rgba(255, 255, 255, 0.768);
+    border-radius: 20px;
+    padding: 10px;
 }
+
+.categ a:hover {
+    color: black;
+}
+
+.categ li {
+    background-color: rgba(118, 142, 162, 0.484);
+    border-radius: 20px;
+    padding: 10px;
+}
+
